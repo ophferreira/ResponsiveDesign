@@ -1,0 +1,8 @@
+.page-sobre{
+    .page-conteudo{
+        @media(min-width: $breakpoint-md){
+            padding-right: 150px;
+            padding-left: 150px;
+        }
+    }
+}

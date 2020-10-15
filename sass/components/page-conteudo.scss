@@ -1,0 +1,17 @@
+.page-conteudo{
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: auto;
+
+    p{
+        color: $cor-letra;
+        line-height: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    @media(min-width: $breakpoint-md){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

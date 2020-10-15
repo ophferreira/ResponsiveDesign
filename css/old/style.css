@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-BoldIt.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+body{
+    font-family: "Source Sans Pro";
+}
+
+/*Cabeçalho*/
+
+.cabecalho{
+    background: #fff;
+    padding: 15px;
+}
+
+/*Logo*/
+
+.logo{
+    background-image: url(../img//logotipo-preto.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 120px;
+    height: 53px;
+    text-indent: -9999px;
+    margin: 0;
+}
+.logo--branco{
+    background-image: url(../img//logotipo-branco.png);
+}
+
+/*Menu Principal*/
+
+.btn-menu{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background-color: #fff;
+    background-image: url(../img/menuprincipal-btn-bg.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.btn-menu-fechar{
+    background-position: -48px 7px;
+}
+.menu-lista{
+    padding: 0;
+    list-style: none;
+}
+.menu-item{
+    text-decoration: none;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+}
+.menu-item-atual{
+    color: #f44242;
+}
+
+/*Rodapé*/
+
+.rodape{
+    color: #fff;
+}
+.rodape .logo{
+    margin-bottom: 25px;
+}
+.rdp-linha-1{
+    background-image: url(../img/rodape-bg.jpg);
+    background-size: cover;
+    background-color: #272525;
+    padding: 15px;
+}
+.rdp-linha-2{
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+}
+.rdp-coluna{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.rodape-titulo{
+    border-bottom: 1px solid #fff;
+    padding: 0 10px 10px 10px;
+    font-size: 18px;
+}
+.rodape-links{
+    padding: 0;
+    list-style: none;
+}
+.rodape-item{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+.rodape-item::before{
+    content: '>';
+    margin-right: 8px;
+    color: #f44242;
+}
+
+/* Page Sobre*/
+
+.page-cabecalho{
+    background-color: #dd3f3f;
+    background-image: url(../img/cabecalho-pagina-bg.jpg);
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.page-cabecalho-titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+.page-cabecalho-titulo::after{
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    content: '';
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.page-conteudo{
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.page-conteudo p{
+    color: #3a3a3a;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Page Portifólio */
+
+.lista-trabalhos{
+    list-style: none;
+    padding: 0;
+}
+.lista-trabalho-item{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 50px;
+}
+.lista-trabalho-item a{
+    text-decoration: none;
+}
+.lista-trabalho-titulo{
+    color: #000;
+    font-size: 18px;
+    margin-left: 15px;
+    border-left: 1px solid #000;
+    padding-left: 10px;
+}
+
+/* Page Contato*/
+
+.forms{
+    background-color: #efecec;
+    margin-left: -15px;
+    margin-right: 15px;
+    padding: 40px 15px 40px 15px;
+    box-shadow: 0 3px 5px #989898;
+    display: block;
+    margin: 0 auto;
+}
+.forms-grupo{
+    margin-bottom: 15px;
+}
+.forms-campo{
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+.forms-label{
+    color: #343434;
+}
+.forms-btn{
+    border: 3px solid #f00;
+    border-radius: 300px;
+    background-color: #fff;
+    color: #f00;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/* Mapa */
+
+.mapa{
+    /*background: #f00;*/
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 -15px -25px -15px;
+}
+
+/* Boas práticas*/
+.mapa iframe{
+    width: 100% !important; /*Irá sobrepor as definições do Iframe*/
+    height: 100% !important; /*Irá sobrepor as definições do Iframe*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Page Home Cabeçalho */
+
+.cabecalho-home{
+    background: url(../img/cabecalho-home-bg.jpg) #000 no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.cabecalho-titulo{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.cabecalho-role{
+    display: none;
+}
+.home-titulo{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.home-titulo::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #f00;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.home-titulo-branco::after{
+    background-color: #fff;
+}
+.servicos{
+    padding: 30px 0;
+}
+.servicos-item{
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+.servicos-text{
+    color: #585858;
+}
+
+/* Seção Depoimentos */
+
+.depoimentos{
+    background-color: #dd3f3f;
+    background-image: url(../img/cabecalho-pagina-bg.jpg);
+    background-attachment: fixed;
+    color: #fff;
+    padding: 30px 0;
+}
+.depoimentos-item{
+    padding: 0 15px;
+}
+.depoimentos-img{
+    margin: 0 auto;
+    display: block;
+    box-shadow: 3px 3px 0 #000;
+    margin-bottom: 30px;
+}
+.depoimentos-text{
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.depoimentos-text::before{
+    background: url(../img/aspas.png) no-repeat;
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 23px;
+    margin-right: 5px;
+}
+.depoimentos-pessoa{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
